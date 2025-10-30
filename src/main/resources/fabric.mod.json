@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morestuff",
+	"version": "${version}",
+	"name": "MoreStuff",
+	"description": "Have you ever dreamed about having... MORE! Well, this mod is definitely your dream then.",
+	"authors": [
+		"DaveBalda"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/morestuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.davebalda.morestuff.MoreStuff"
+		],
+		"fabric-datagen": [
+			"net.davebalda.morestuff.MoreStuffDataGenerator"
+		],
+        "client": [
+            "net.davebalda.morestuff.MoreStuffClient"
+        ]
+	},
+	"mixins": [
+		"morestuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
