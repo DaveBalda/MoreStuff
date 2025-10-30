@@ -1,5 +1,6 @@
 package net.davebalda.morestuff;
 
+import net.davebalda.morestuff.block.ModBlocks;
 import net.davebalda.morestuff.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,5 +19,6 @@ public class MoreStuff implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
