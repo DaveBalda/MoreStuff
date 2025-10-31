@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:redstone",
+    "B": "minecraft:redstone_block"
+  },
+  "pattern": [
+    "RRR",
+    "RBR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "morestuff:raw_redstone_crystal"
+  }
+}

@@ -2,6 +2,12 @@
   "item.morestuff.redstone_crystal": "Redstone Crystal",
   "item.morestuff.raw_redstone_crystal": "Raw Redstone Crystal",
   "item.morestuff.fine_redstone_block": "Fine Redstone Block",
+  "item.morestuff.raw_sapphire": "Raw Sapphire",
+  "item.morestuff.sapphire": "Sapphire",
+  "item.morestuff.sapphire_gem": "Sapphire Gem",
+  "item.morestuff.sapphire_gem_block": "Sapphire Gem Block",
+  "item.morestuff.sapphire_ore": "Sapphire Ore",
+  "item.morestuff.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
 
   "itemgroup.morestuff.more_stuff_items": "MoreStuff Stuff"
 }

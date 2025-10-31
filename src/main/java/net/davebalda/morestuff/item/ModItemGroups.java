@@ -20,6 +20,12 @@ public class ModItemGroups {
                         entries.add(ModItems.REDSTONE_CRYSTAL);
                         entries.add(ModItems.RAW_REDSTONE_CRYSTAL);
                         entries.add(ModBlocks.FINE_REDSTONE_BLOCK);
+                        entries.add(ModItems.SAPPHIRE_GEM);
+                        entries.add(ModItems.SAPPHIRE);
+                        entries.add(ModItems.RAW_SAPPHIRE);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_BLOCK);
+                        entries.add(ModBlocks.SAPPHIRE_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
                     })
                     .build());
 

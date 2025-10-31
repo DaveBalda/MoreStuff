@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "morestuff:sapphire_gem_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "morestuff:sapphire_gem"
+  }
+}

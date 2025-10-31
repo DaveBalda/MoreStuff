@@ -10,10 +10,6 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
-/**
- * Classe per la gestione e la creazione di nuovi items.
- * Non viene registrata texture ne nome.
- */
 public class ModItems {
     // Item list with ID and registry keys
     public static final Item REDSTONE_CRYSTAL = registerItem("redstone_crystal", new Item(new Item.Settings()
@@ -21,6 +17,15 @@ public class ModItems {
     ));
     public static final Item RAW_REDSTONE_CRYSTAL = registerItem("raw_redstone_crystal", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "raw_redstone_crystal")))
+    ));
+    public static final Item SAPPHIRE_GEM = registerItem("sapphire_gem", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "sapphire_gem")))
+    ));
+    public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "sapphire")))
+    ));
+    public static final Item RAW_SAPPHIRE = registerItem("raw_sapphire", new Item(new Item.Settings()
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "raw_sapphire")))
     ));
 
     // Helper method to register items
