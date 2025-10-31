@@ -30,11 +30,5 @@ public class ModItems {
 
     public static void registerModItems() {
         MoreStuff.LOGGER.info("Registering items for: " + MoreStuff.MOD_ID);
-
-        // Item group tabs
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(REDSTONE_CRYSTAL);
-            fabricItemGroupEntries.add(RAW_REDSTONE_CRYSTAL);
-        });
     }
 }

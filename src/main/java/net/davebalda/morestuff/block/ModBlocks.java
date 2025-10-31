@@ -39,9 +39,5 @@ public class ModBlocks {
 
     public static void registerModBlocks(){
         MoreStuff.LOGGER.info("Registering blocks for: " + MoreStuff.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.FINE_REDSTONE_BLOCK);
-        });
     }
 }
