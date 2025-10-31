@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": "minecraft:blaze_rod",
+    "G": "morestuff:sapphire_gem"
+  },
+  "pattern": [
+    "  G",
+    " G ",
+    "R  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "morestuff:restoration_wand"
+  }
+}

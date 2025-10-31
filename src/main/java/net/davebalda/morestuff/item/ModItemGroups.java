@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAPPHIRE_GEM_BLOCK);
                         entries.add(ModBlocks.SAPPHIRE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+                        entries.add(ModItems.RESTORATION_WAND);
                     })
                     .build());
 

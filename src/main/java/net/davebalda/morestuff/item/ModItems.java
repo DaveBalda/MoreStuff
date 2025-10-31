@@ -1,9 +1,8 @@
 package net.davebalda.morestuff.item;
 
 import net.davebalda.morestuff.MoreStuff;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.davebalda.morestuff.item.custom.RestorationWandItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -12,6 +11,10 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     // Item list with ID and registry keys
+    public static final Item RESTORATION_WAND = registerItem("restoration_wand", new RestorationWandItem(
+            new Item.Settings().maxCount(1).maxDamage(500)
+            .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "restoration_wand")))
+    ));
     public static final Item REDSTONE_CRYSTAL = registerItem("redstone_crystal", new Item(new Item.Settings()
             .registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, "redstone_crystal")))
     ));
