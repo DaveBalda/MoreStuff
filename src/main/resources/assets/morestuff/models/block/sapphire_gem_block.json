@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "morestuff:block/sapphire_gem_block"
-  }
-}
