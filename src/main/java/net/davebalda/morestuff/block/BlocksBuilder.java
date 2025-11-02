@@ -1,8 +1,8 @@
 package net.davebalda.morestuff.block;
 
 import net.davebalda.morestuff.MoreStuff;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -34,6 +34,45 @@ public class BlocksBuilder {
      */
     private static RegistryKey<Item> keyOfItem(String id) {
         return RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MoreStuff.MOD_ID, id));
+    }
+
+    /**
+     * Builder method to quickly build stairs block from a base.
+     * @param id
+     * @param base
+     * @return
+     */
+    public static Block registerStairsBlock(String id, Block base) {
+        return register(id, settings -> new StairsBlock(base.getDefaultState(), settings), AbstractBlock.Settings.copy(base));
+    }
+
+    /**
+     * Builder method to quickly build slabs block from a base.
+     * @param id
+     * @param base
+     * @return
+     */
+    public static Block registerSlabBlock(String id, Block base) {
+        return register(id, SlabBlock::new, AbstractBlock.Settings.copy(base));
+    }
+
+    /**
+     * Builder method to quickly build walls block from a base.
+     * @param id
+     * @param base
+     * @return
+     */
+    public static Block registerWallBlock(String id, Block base) {
+        return register(id, WallBlock::new, AbstractBlock.Settings.copy(base).solid());
+    }
+
+    /**
+     * Helper method to create buttons.
+     * It only sets up the settings.
+     * @return
+     */
+    public static AbstractBlock.Settings createButtonSettings() {
+        return AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY);
     }
 
     /**

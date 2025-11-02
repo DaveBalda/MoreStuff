@@ -22,6 +22,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.FINE_REDSTONE_BLOCK);
         addDrop(ModBlocks.SAPPHIRE_GEM_BLOCK);
+        addDrop(ModBlocks.SAPPHIRE_GEM_BUTTON);
+        addDrop(ModBlocks.SAPPHIRE_GEM_FENCE);
+        addDrop(ModBlocks.SAPPHIRE_GEM_FENCE_GATE);
+        addDrop(ModBlocks.SAPPHIRE_GEM_PRESSURE_PLATE);
+        addDrop(ModBlocks.SAPPHIRE_GEM_TRAPDOOR);
+        addDrop(ModBlocks.SAPPHIRE_GEM_STAIRS);
+        addDrop(ModBlocks.SAPPHIRE_GEM_WALL);
+
+        addDrop(ModBlocks.SAPPHIRE_GEM_SLAB, slabDrops(ModBlocks.SAPPHIRE_GEM_SLAB));
+        addDrop(ModBlocks.SAPPHIRE_GEM_DOOR, doorDrops(ModBlocks.SAPPHIRE_GEM_DOOR));
 
         addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(
                 ModBlocks.SAPPHIRE_ORE, ModItems.RAW_SAPPHIRE

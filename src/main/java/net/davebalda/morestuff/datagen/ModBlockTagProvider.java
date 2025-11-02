@@ -19,11 +19,25 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.FINE_REDSTONE_BLOCK)
                 .add(ModBlocks.SAPPHIRE_GEM_BLOCK)
                 .add(ModBlocks.SAPPHIRE_ORE)
-                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
-
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE)
+                .add(ModBlocks.SAPPHIRE_GEM_STAIRS)
+                .add(ModBlocks.SAPPHIRE_GEM_SLAB)
+                .add(ModBlocks.SAPPHIRE_GEM_BUTTON)
+                .add(ModBlocks.SAPPHIRE_GEM_DOOR)
+                .add(ModBlocks.SAPPHIRE_GEM_TRAPDOOR)
+                .add(ModBlocks.SAPPHIRE_GEM_FENCE)
+                .add(ModBlocks.SAPPHIRE_GEM_FENCE_GATE)
+                .add(ModBlocks.SAPPHIRE_GEM_WALL)
+                .add(ModBlocks.SAPPHIRE_GEM_PRESSURE_PLATE);
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SAPPHIRE_ORE)
                 .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE)
                 .add(ModBlocks.SAPPHIRE_GEM_BLOCK);
+        valueLookupBuilder(BlockTags.FENCES)
+                .add(ModBlocks.SAPPHIRE_GEM_FENCE);
+        valueLookupBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.SAPPHIRE_GEM_FENCE_GATE);
+        valueLookupBuilder(BlockTags.WALLS)
+                .add(ModBlocks.SAPPHIRE_GEM_WALL);
     }
 }

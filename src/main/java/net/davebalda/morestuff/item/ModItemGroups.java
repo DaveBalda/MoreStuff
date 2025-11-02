@@ -20,12 +20,23 @@ public class ModItemGroups {
                         entries.add(ModItems.REDSTONE_CRYSTAL);
                         entries.add(ModItems.RAW_REDSTONE_CRYSTAL);
                         entries.add(ModBlocks.FINE_REDSTONE_BLOCK);
+
                         entries.add(ModItems.SAPPHIRE_GEM);
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModItems.RAW_SAPPHIRE);
                         entries.add(ModBlocks.SAPPHIRE_GEM_BLOCK);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_STAIRS);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_SLAB);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_WALL);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_FENCE);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_FENCE_GATE);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_BUTTON);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_DOOR);
+                        entries.add(ModBlocks.SAPPHIRE_GEM_TRAPDOOR);
                         entries.add(ModBlocks.SAPPHIRE_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
                         entries.add(ModItems.RESTORATION_WAND);
                     })
                     .build());

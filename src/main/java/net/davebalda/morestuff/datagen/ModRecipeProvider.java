@@ -8,6 +8,7 @@ import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -56,6 +57,35 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('G', ModItems.SAPPHIRE_GEM)
                         .criterion(hasItem(ModItems.SAPPHIRE_GEM), conditionsFromItem(ModItems.SAPPHIRE_GEM))
                         .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_GEM_FENCE, 3)
+                        .pattern("BSB")
+                        .pattern("BSB")
+                        .input('B', ModBlocks.SAPPHIRE_GEM_BLOCK)
+                        .input('S', ModItems.SAPPHIRE)
+                        .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                        .offerTo(exporter);
+                createShaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_GEM_FENCE_GATE)
+                        .pattern("SBS")
+                        .pattern("SBS")
+                        .input('B', ModBlocks.SAPPHIRE_GEM_BLOCK)
+                        .input('S', ModItems.SAPPHIRE)
+                        .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                        .offerTo(exporter);
+                createStairsRecipe(ModBlocks.SAPPHIRE_GEM_STAIRS, Ingredient.ofItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .criterion(hasItem(ModBlocks.SAPPHIRE_GEM_BLOCK), conditionsFromItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .offerTo(exporter);
+                offerSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_GEM_SLAB, ModBlocks.SAPPHIRE_GEM_BLOCK);
+                createButtonRecipe(ModBlocks.SAPPHIRE_GEM_BUTTON, Ingredient.ofItem(ModItems.SAPPHIRE_GEM))
+                        .criterion(hasItem(ModItems.SAPPHIRE_GEM), conditionsFromItem(ModItems.SAPPHIRE_GEM))
+                        .offerTo(exporter);
+                offerPressurePlateRecipe(ModBlocks.SAPPHIRE_GEM_PRESSURE_PLATE, ModBlocks.SAPPHIRE_GEM_BLOCK);
+                createDoorRecipe(ModBlocks.SAPPHIRE_GEM_DOOR, Ingredient.ofItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .criterion(hasItem(ModBlocks.SAPPHIRE_GEM_BLOCK), conditionsFromItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .offerTo(exporter);
+                createTrapdoorRecipe(ModBlocks.SAPPHIRE_GEM_TRAPDOOR, Ingredient.ofItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .criterion(hasItem(ModBlocks.SAPPHIRE_GEM_BLOCK), conditionsFromItem(ModBlocks.SAPPHIRE_GEM_BLOCK))
+                        .offerTo(exporter);
+                offerWallRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_GEM_WALL, ModBlocks.SAPPHIRE_GEM_BLOCK);
             }
         };
     }
